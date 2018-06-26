@@ -7,7 +7,7 @@ SpreePaymaya
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_paymaya', github: 'ronzalo/spree_paymaya'
+  gem 'spree_paymaya', github: 'oscar6654/spree_paymaya'
   ```
 
 2. Install the gem using Bundler:
