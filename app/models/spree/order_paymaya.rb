@@ -10,7 +10,7 @@ module Spree
       {
         total_amount: {
           currency: @order.currency,
-          value: @order.total.to_s,
+          value: @order.order_total_after_store_credit.to_s,
           details: {
             shipping_fee: @order.shipment_total.to_s,
             discount: @order.promo_total.abs.to_s,
