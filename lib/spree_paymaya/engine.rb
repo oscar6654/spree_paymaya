@@ -18,7 +18,7 @@ module SpreePaymaya
     config.to_prepare &method(:activate).to_proc
 
     initializer "spree.register.payment_methods", after: 'spree.register.payment_methods' do |app|
-      app.config.spree.payment_methods << Spree::Gateway::PayMaya
+      app.config.spree.payment_methods << PayMaya
     end
   end
 end
