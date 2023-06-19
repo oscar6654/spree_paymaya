@@ -12,7 +12,7 @@ module Spree::OrderDecorator
   end
 
   def to_paymaya
-    OrderPaymaya.new(self).checkout
+    Spree::OrderPaymaya.new(self).checkout
   end
 end
 
