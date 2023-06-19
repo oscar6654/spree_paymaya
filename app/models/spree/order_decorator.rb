@@ -7,9 +7,13 @@
 # end
 
 module Spree::OrderDecorator
+
+  def self.prepended(base)
+  end
+
   def to_paymaya
     OrderPaymaya.new(self).checkout
   end
 end
 
-Order.prepend(Spree::OrderDecorator)
+::Spree::Order.prepend(Spree::OrderDecorator)
